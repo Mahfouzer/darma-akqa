@@ -48,3 +48,134 @@ body {
     }
   }
 }
+
+.navigation-container {
+  margin-top: 60px;
+  position: relative;
+
+  .main-menu {
+    display: flex;
+    justify-content: space-between;
+    @include main-container-padding;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+
+    li {
+      text-decoration: none;
+      list-style: none;
+      text-decoration-line: none;
+
+      &:focus-within {
+        .first-submenu-level {
+          display: flex;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      &:hover .first-submenu-level {
+        display: flex;
+      }
+    }
+  }
+
+  .sub-menu {
+    width: calc(100vw - 360px);
+    @include main-container-padding;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+
+    &.first-submenu-level {
+      display: none;
+      background-color: #e6e7e8;
+      left: -180px;
+
+      & li:hover .second-submenu-level {
+        display: flex;
+      }
+
+      & li:focus-within .second-submenu-level {
+        display: flex;
+      }
+
+      a {
+        color: #17609c;
+      }
+    }
+
+    &.second-submenu-level {
+      display: none;
+      background-color: #17609c;
+      left: -180px;
+      a {
+        color: white;
+      }
+    }
+  }
+
+  .main-menu > li {
+    position: relative;
+
+    &:hover > a,
+    &:focus-within > a {
+      font-weight: bold;
+    }
+    &:hover:after,
+    &:focus-within:after {
+      position: absolute;
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      top: 52px;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #e6e7e8;
+    }
+  }
+
+  .first-submenu-level > li {
+    position: relative;
+
+    a {
+      font-weight: normal;
+    }
+
+    &:hover > a,
+    &:focus-within > a {
+      font-weight: bold;
+      text-decoration-line: underline;
+    }
+    &:hover:after,
+    &:focus-within:after {
+      position: absolute;
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      top: 52px;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #17609c;
+    }
+  }
+
+  .second-submenu-level > li {
+    position: relative;
+
+    &:hover > a,
+    &:focus > a {
+      font-weight: bold;
+      text-decoration-line: underline;
+    }
+  }
+}
