@@ -1,0 +1,43 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.App-container {
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+
+  .search-form {
+    position: relative;
+    margin-right: 120px;
+    .search-bar {
+      width: 354px;
+      height: 51px;
+      mix-blend-mode: normal;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      box-sizing: border-box;
+      border-radius: 25.5px;
+      color: black;
+    }
+    .submit-search {
+      background-image: url("../images/search.svg");
+      background-size: 25px 25px;
+      background-repeat: no-repeat;
+      height: 39px;
+      width: 39px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      position: absolute;
+      right: -1px;
+      top: 11px;
+      opacity: 0.6;
+    }
+  }
+}
