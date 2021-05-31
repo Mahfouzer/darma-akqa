@@ -16,6 +16,18 @@ export default function NavigationList() {
         <li>
           <a href="/nowhere">Bedingungen</a>
         </li>
+        <li>
+          <a href="/nowhere">Bedingungen</a>
+        </li>
+        <li>
+          <a href="/nowhere">Bedingungen</a>
+        </li>
+        <li>
+          <a href="/nowhere">Bedingungen</a>
+        </li>
+        <li>
+          <a href="/nowhere">Bedingungen</a>
+        </li>
       </ul>
     </nav>
   );
