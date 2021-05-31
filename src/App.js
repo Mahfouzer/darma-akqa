@@ -1,5 +1,5 @@
 import AppLogo from "./assets/images/DermaWorld.svg";
-import NavigationList from "./NavigationList/NavigationList";
+import NavigationList from "./components/NavigationList/NavigationList";
 
 function App() {
   return (
