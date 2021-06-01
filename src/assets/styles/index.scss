@@ -251,6 +251,8 @@ body {
   @include main-container-padding;
   display: flex;
   justify-content: space-between;
+  height: 660px;
+  align-items: center;
 
   dl {
     width: 25%;
@@ -291,4 +293,52 @@ body {
       color: #c017a2;
     }
   }
+}
+
+//medication main video section
+
+.medication-main-video-container {
+  @include main-container-padding;
+  display: flex;
+  align-items: center;
+  height: 720px;
+  justify-content: space-between;
+
+  header {
+    font-style: normal;
+    letter-spacing: 0.5px;
+    color: #00609c;
+
+    h3 {
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 120%;
+    }
+  }
+
+  .main-video-about-container {
+    margin-right: 20px;
+  }
+
+  .watch-the-video-button {
+    width: 216px;
+    height: 55px;
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+    color: white;
+    background-color: #c017a2;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 55px;
+  }
+
+  .video-representitive-img {
+    width: 700px;
+    height: 400px;
+  }
+
+  background: #eeeeee;
 }

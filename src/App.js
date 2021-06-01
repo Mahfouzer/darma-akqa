@@ -2,6 +2,7 @@ import AppLogo from "./assets/images/DermaWorld.svg";
 import MedicationInfo from "./components/MedicationInfo/MedicationInfo";
 import MedicationBenifits from "./components/MedicationBenifits/MedicationBenifits";
 import NavigationList from "./components/NavigationList/NavigationList";
+import MedicationMainVideo from "./components/MedicationMainVideo/MedicationMainVideo";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <main>
         <MedicationInfo />
         <MedicationBenifits />
+        <MedicationMainVideo />
       </main>
     </div>
   );
