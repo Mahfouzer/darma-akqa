@@ -19,9 +19,18 @@ body {
     justify-content: space-between;
     @include main-container-padding;
 
+    .logo-container {
+      font-size: 0;
+      align-self: start;
+    }
+
     .search-form {
       position: relative;
       margin-right: 120px;
+
+      span {
+        display: none;
+      }
       .search-bar {
         width: 354px;
         height: 51px;
@@ -49,6 +58,7 @@ body {
   }
 }
 
+//Navigation
 .navigation-container {
   margin-top: 60px;
   position: relative;
@@ -60,6 +70,7 @@ body {
     height: 60px;
     line-height: 60px;
     vertical-align: middle;
+    margin-bottom: 0;
 
     li {
       text-decoration: none;
@@ -176,6 +187,60 @@ body {
     &:focus > a {
       font-weight: bold;
       text-decoration-line: underline;
+    }
+  }
+}
+
+//medication-info
+
+.medication-info {
+  .medication-header {
+    background-color: #0a121e;
+    @include main-container-padding;
+    background-position: right;
+    height: 410px;
+    background-size: auto 410px;
+    background-repeat: no-repeat;
+    background-image: -webkit-image-set(
+      url("../images/IVA-Cover-ohne-retuschiert 1@2x.png") 1x,
+      url("../images/IVA-Cover-ohne-retuschiert 1@3x.png") 2x
+    );
+
+    .medication-logo {
+      margin-top: 45px;
+    }
+
+    .medication-about {
+      font-size: 28px;
+      line-height: 130%;
+      color: white;
+      width: 40%;
+    }
+  }
+  .medication-package-information {
+    display: flex;
+    align-items: center;
+    height: 410px;
+    background-color: #eeeeee;
+
+    @include main-container-padding;
+
+    .medication-description {
+      width: 40%;
+      margin-top: -30px;
+      margin-left: 150px;
+
+      p {
+        font-size: 28px;
+        line-height: 130%;
+        letter-spacing: 0.5px;
+        color: #00609c;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
     }
   }
 }

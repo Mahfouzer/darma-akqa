@@ -1,5 +1,5 @@
 import AppLogo from "./assets/images/DermaWorld.svg";
-import medicationLogo from "./assets/images/AdtralzaGlobal.svg";
+import MedicationInfo from "./components/MedicationInfo/MedicationInfo";
 import NavigationList from "./components/NavigationList/NavigationList";
 
 function App() {
@@ -7,8 +7,8 @@ function App() {
     <div className="App-container">
       <header className="App-header">
         <div className="logo-search-container">
-          <h1>
-            <a href="/" className="logo-container">
+          <h1 className="logo-container">
+            <a href="/">
               Derma world
               <img className="App-logo" src={AppLogo} alt="Derma world" />
             </a>
@@ -29,24 +29,7 @@ function App() {
         <NavigationList />
       </header>
       <main>
-        <section className="medication-info">
-          <header className="medication-header">
-            <img
-              src={medicationLogo}
-              alt="Adtralza Global logo"
-              className="medication-logo"
-            ></img>
-            <h2 className="medication-about">
-              Adtralza® is a new treatment for adult patients with
-              moderate-to-severe atopic dermatitis (eczema) who are candidates
-              for systemic therapy.
-            </h2>
-            <picture>
-              <source></source>
-            </picture>
-          </header>
-          <section className="medication-about"></section>
-        </section>
+        <MedicationInfo />
       </main>
     </div>
   );
