@@ -8,6 +8,8 @@ import MedicationVideos from "./components/MedicationVideos/MedicationVideos";
 import WebsiteFooter from "./components/WebsiteFooter/WebsiteFooter";
 
 function App() {
+  document.title = "Derma world";
+
   return (
     <div className="App-container">
       <header className="App-header">
