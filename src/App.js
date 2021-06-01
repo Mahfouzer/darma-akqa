@@ -1,5 +1,6 @@
 import AppLogo from "./assets/images/DermaWorld.svg";
 import MedicationInfo from "./components/MedicationInfo/MedicationInfo";
+import MedicationBenifits from "./components/MedicationBenifits/MedicationBenifits";
 import NavigationList from "./components/NavigationList/NavigationList";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       </header>
       <main>
         <MedicationInfo />
+        <MedicationBenifits />
       </main>
     </div>
   );
