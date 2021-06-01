@@ -412,3 +412,88 @@ body {
     object-fit: contain;
   }
 }
+
+//medication videos section
+
+.medication-videos-section {
+  height: 720px;
+  background-color: #eeee;
+  @include main-container-padding;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  header {
+    margin-bottom: 60px;
+    h3 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 130%;
+
+      letter-spacing: 0.5px;
+      margin-bottom: 0;
+      color: #00609c;
+    }
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+
+      color: #000000;
+    }
+  }
+  ol {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-left: 0;
+
+    li.video-container {
+      list-style: none;
+      display: flex;
+      width: 40%;
+      min-width: 520px;
+
+      .medication-video {
+        position: relative;
+        width: 250px;
+        height: 140px;
+        background-color: white;
+        margin-right: 20px;
+        margin-bottom: 65px;
+
+        &:after {
+          content: "";
+          width: 40px;
+          height: 40px;
+          display: block;
+          position: absolute;
+          background-image: url("../images/videoIcon.svg");
+          background-size: 40px;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .video-about {
+        a {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          text-decoration: none;
+
+          color: #00609c;
+          margin: 0 0 0 0;
+        }
+        p {
+          width: 240px;
+        }
+      }
+    }
+  }
+}
