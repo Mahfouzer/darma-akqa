@@ -497,3 +497,48 @@ body {
     }
   }
 }
+
+//footer
+footer {
+  background-color: #00609c;
+  @include main-container-padding;
+  height: 390px;
+
+  img {
+    margin-top: 100px;
+  }
+
+  .company-copyrights {
+    margin-left: auto;
+    text-align: right;
+    color: white;
+    font-size: 14px;
+
+    a {
+      color: white;
+      position: relative;
+      top: 30px;
+    }
+  }
+
+  nav {
+    margin-top: 60px;
+    text-align: center;
+    a {
+      position: relative;
+      color: #99bfd7;
+      text-decoration: none;
+      margin-right: 20px;
+
+      &:after {
+        content: "|";
+        position: absolute;
+        right: -12px;
+      }
+      &:last-child:after {
+        content: "";
+        display: none;
+      }
+    }
+  }
+}

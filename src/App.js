@@ -5,6 +5,7 @@ import NavigationList from "./components/NavigationList/NavigationList";
 import MedicationMainVideo from "./components/MedicationMainVideo/MedicationMainVideo";
 import MedicationArticles from "./components/MedicationArticles/MedicationArticles";
 import MedicationVideos from "./components/MedicationVideos/MedicationVideos";
+import WebsiteFooter from "./components/WebsiteFooter/WebsiteFooter";
 
 function App() {
   return (
@@ -38,6 +39,8 @@ function App() {
         <MedicationMainVideo />
         <MedicationArticles />
         <MedicationVideos />
+
+        <WebsiteFooter />
       </main>
     </div>
   );
