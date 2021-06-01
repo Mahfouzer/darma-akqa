@@ -325,12 +325,12 @@ body {
     height: 55px;
     display: block;
     margin: 20px 0;
-    text-decoration: none;
     color: white;
-    background-color: #c017a2;
     font-size: 1.5em;
     font-weight: bold;
     border-radius: 30px;
+    text-decoration: none;
+    background-color: #c017a2;
     text-align: center;
     line-height: 55px;
   }
@@ -341,4 +341,74 @@ body {
   }
 
   background: #eeeeee;
+}
+
+// Articles section
+
+.articles-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include main-container-padding;
+  height: 850px;
+
+  header {
+    h3 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 120%;
+      letter-spacing: 0.5px;
+
+      color: #00609c;
+    }
+  }
+  ol {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    justify-content: space-between;
+
+    .article {
+      background-color: #eeeeee;
+      width: 530px;
+      padding-bottom: 45px;
+      margin-right: 20px;
+
+      p,
+      a,
+      h4 {
+        margin: 5px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        padding-right: 50px;
+      }
+
+      h4 {
+        margin-top: 55px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 32px;
+
+        letter-spacing: 0.5px;
+
+        color: #00609c;
+      }
+
+      a {
+        text-decoration: none;
+        color: #c017a2;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+  }
+
+  img {
+    width: 530px;
+    height: 320px;
+    object-fit: contain;
+  }
 }

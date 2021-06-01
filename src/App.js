@@ -3,6 +3,7 @@ import MedicationInfo from "./components/MedicationInfo/MedicationInfo";
 import MedicationBenifits from "./components/MedicationBenifits/MedicationBenifits";
 import NavigationList from "./components/NavigationList/NavigationList";
 import MedicationMainVideo from "./components/MedicationMainVideo/MedicationMainVideo";
+import MedicationArticles from "./components/MedicationArticles/MedicationArticles";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <MedicationInfo />
         <MedicationBenifits />
         <MedicationMainVideo />
+        <MedicationArticles />
       </main>
     </div>
   );
