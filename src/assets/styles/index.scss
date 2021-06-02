@@ -195,11 +195,11 @@ body {
 
 .medication-info {
   .medication-header {
-    background-color: #0a121e;
     @include main-container-padding;
+    background-color: #0a121e;
     background-position: right;
-    height: 410px;
     background-size: auto 410px;
+    height: 410px;
     background-repeat: no-repeat;
     background-image: -webkit-image-set(
       url("../images/IVA-Cover-ohne-retuschiert 1@2x.png") 1x,
@@ -220,7 +220,7 @@ body {
   .medication-package-information {
     display: flex;
     align-items: center;
-    height: 410px;
+    flex-wrap: wrap;
     background-color: #eeeeee;
 
     @include main-container-padding;
@@ -250,12 +250,12 @@ body {
 .medication-benifits {
   @include main-container-padding;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  height: 660px;
-  align-items: center;
+  padding: 100px 0;
 
   dl {
-    width: 25%;
+    width: 350px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -301,9 +301,9 @@ body {
   @include main-container-padding;
   display: flex;
   align-items: center;
-  height: 720px;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 100px 0;
 
   header {
     font-style: normal;
@@ -319,6 +319,7 @@ body {
 
   .main-video-about-container {
     margin-right: 20px;
+    max-width: 40%;
   }
 
   .watch-the-video-button {
@@ -424,10 +425,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  @include for-large-desktop-up {
-    height: 1000px;
-  }
 
   header {
     margin-bottom: 60px;
