@@ -303,6 +303,7 @@ body {
   align-items: center;
   height: 720px;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   header {
     font-style: normal;
@@ -368,12 +369,14 @@ body {
     display: flex;
     list-style: none;
     padding-left: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     .article {
       background-color: #eeeeee;
-      width: 530px;
+      max-width: 530px;
       padding-bottom: 45px;
-      margin-right: 100px;
+      margin-right: 20px;
 
       p,
       a,
@@ -421,6 +424,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include for-large-desktop-up {
+    height: 1000px;
+  }
 
   header {
     margin-bottom: 60px;

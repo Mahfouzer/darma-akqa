@@ -1,9 +1,25 @@
 @mixin main-container-padding {
-  @include for-tablet-portrait-up {
-    padding-left: 80px;
-    padding-right: 80px;
+  @include for-phone-only {
+    padding-left: 0;
+    padding-right: 0;
   }
+
+  @include for-tablet-portrait-up {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   @include for-tablet-landscape-up {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include for-tablet-landscape-up {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include for-large-desktop-up {
     padding-left: 180px;
     padding-right: 180px;
   }
@@ -29,7 +45,14 @@
     @content;
   }
 }
-@mixin for-big-desktop-up {
+
+@mixin for-large-desktop-up {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin for-extra-large-desktop-up {
   @media (min-width: 1800px) {
     @content;
   }
